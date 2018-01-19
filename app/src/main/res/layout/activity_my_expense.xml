@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mridul.expensemanager.MyExpenseActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:background="#E8E8E8"
+        android:id="@+id/expenseList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/noRecordsE"
+        android:elevation="5dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_records"
+        android:textSize="25sp"/>
+
+    <ImageButton
+        android:id="@+id/addNewExpense"
+        android:elevation="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"/>
+
+</RelativeLayout>
